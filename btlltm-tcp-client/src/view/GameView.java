@@ -6,7 +6,6 @@
 package view;
 
 import java.util.concurrent.Callable;
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import run.ClientRun;
 import helper.*;
@@ -138,17 +137,17 @@ public class GameView extends javax.swing.JFrame {
         );
         currentRound = 1;
         if (redAnswer[currentRound] == 1) {
-            marbel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a red marble.png"));
-            marbel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a black marbel.png"));
-            marbel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a black marbel.png"));
+            marbel1.setIcon(new javax.swing.ImageIcon("src\\a red marble.png"));
+            marbel2.setIcon(new javax.swing.ImageIcon("src\\a black marbel.png"));
+            marbel3.setIcon(new javax.swing.ImageIcon("src\\a black marbel.png"));
         } else if (redAnswer[currentRound] == 2) {
-            marbel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a black marbel.png"));
-            marbel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a red marble.png"));
-            marbel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a black marbel.png"));
+            marbel1.setIcon(new javax.swing.ImageIcon("src\\a black marbel.png"));
+            marbel2.setIcon(new javax.swing.ImageIcon("src\\a red marble.png"));
+            marbel3.setIcon(new javax.swing.ImageIcon("src\\a black marbel.png"));
         } else if (redAnswer[currentRound] == 3) {
-            marbel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a black marbel.png"));
-            marbel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a black marbel.png"));
-            marbel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a red marble.png"));
+            marbel1.setIcon(new javax.swing.ImageIcon("src\\a black marbel.png"));
+            marbel2.setIcon(new javax.swing.ImageIcon("src\\a black marbel.png"));
+            marbel3.setIcon(new javax.swing.ImageIcon("src\\a red marble.png"));
         }
     }
     
@@ -371,50 +370,48 @@ public class GameView extends javax.swing.JFrame {
         cup1.setBackground(new java.awt.Color(255, 102, 51));
         cup1.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         cup1.setForeground(new java.awt.Color(102, 102, 255));
-        cup1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a yellow cup (1).png")); // NOI18N
+        cup1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/a yellow cup.png"))); // NOI18N
         cup1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        cup1.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/a yellow cup.png"))); // NOI18N
         cup1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 cup1MouseClicked(evt);
             }
         });
-        panel.add(cup1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 150, 160));
+        panel.add(cup1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 150, 160));
 
-        marbel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a red marble.png")); // NOI18N
         marbel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 51), 1, true));
-        panel.add(marbel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, 70, 60));
+        panel.add(marbel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 70, 60));
 
         cup2.setBackground(new java.awt.Color(255, 102, 51));
         cup2.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         cup2.setForeground(new java.awt.Color(102, 102, 255));
-        cup2.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a yellow cup (1).png")); // NOI18N
+        cup2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/a yellow cup.png"))); // NOI18N
         cup2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         cup2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 cup2MouseClicked(evt);
             }
         });
-        panel.add(cup2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 150, 160));
+        panel.add(cup2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, 150, 160));
 
-        marbel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a red marble.png")); // NOI18N
         marbel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 51), 1, true));
-        panel.add(marbel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 130, 70, 60));
+        panel.add(marbel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, 70, 60));
 
         cup3.setBackground(new java.awt.Color(255, 102, 51));
         cup3.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         cup3.setForeground(new java.awt.Color(102, 102, 255));
-        cup3.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a yellow cup (1).png")); // NOI18N
+        cup3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/a yellow cup.png"))); // NOI18N
         cup3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         cup3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 cup3MouseClicked(evt);
             }
         });
-        panel.add(cup3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 10, 150, 160));
+        panel.add(cup3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 30, 150, 160));
 
-        marbel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a red marble.png")); // NOI18N
         marbel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 51, 51), 1, true));
-        panel.add(marbel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 130, 70, 60));
+        panel.add(marbel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 90, 70, 60));
 
         btnNextRound.setBackground(new java.awt.Color(255, 102, 102));
         btnNextRound.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
@@ -665,19 +662,19 @@ public class GameView extends javax.swing.JFrame {
         cup2.setLocation(270, 10);
         cup3.setLocation(510, 10);
         if (redAnswer[currentRound] == 1) {
-            marbel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a red marble.png"));
-            marbel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a black marbel.png"));
-            marbel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a black marbel.png"));
+            marbel1.setIcon(new javax.swing.ImageIcon("src\\a red marble.png"));
+            marbel2.setIcon(new javax.swing.ImageIcon("src\\a black marbel.png"));
+            marbel3.setIcon(new javax.swing.ImageIcon("src\\a black marbel.png"));
 
         } else if (redAnswer[currentRound] == 2) {
-            marbel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a black marbel.png"));
-            marbel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a red marble.png"));
-            marbel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a black marbel.png"));
+            marbel1.setIcon(new javax.swing.ImageIcon("src\\a black marbel.png"));
+            marbel2.setIcon(new javax.swing.ImageIcon("src\\a red marble.png"));
+            marbel3.setIcon(new javax.swing.ImageIcon("src\\a black marbel.png"));
 
         } else if (redAnswer[currentRound] == 3) {
-            marbel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a black marbel.png"));
-            marbel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a black marbel.png"));
-            marbel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\nguye\\Downloads\\a red marble.png"));
+            marbel1.setIcon(new javax.swing.ImageIcon("src\\a black marbel.png"));
+            marbel2.setIcon(new javax.swing.ImageIcon("src\\a black marbel.png"));
+            marbel3.setIcon(new javax.swing.ImageIcon("src\\a red marble.png"));
         }
 
         // Reset any other game-specific variables as needed

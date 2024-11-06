@@ -417,22 +417,6 @@ private void onReceiveSubmitResult(String received) throws SQLException {
         } else if (user1.equals(joinedRoom.getClient2().getLoginUser())) {
             joinedRoom.setResultClient2(received);
         }
-//        String user1 = splitted[1];
-//        String result = splitted[4]; // Giả định kết quả là "correct" hoặc "incorrect"
-//        
-//        if (result.equals("correct")) {
-//            this.score += 10; // +10 điểm cho mỗi câu đúng
-//        }
-//
-//        this.round++; // Tăng số ván chơi lên 1
-//
-//        if (this.round < 3) {
-//            // Nếu chưa đủ 3 ván, tiếp tục cho ván sau
-//            int nextQuestion = Question.renQuestion(); 
-//            String data = "START_NEXT_ROUND;" + nextQuestion;
-//            joinedRoom.broadcast(data); // Gửi câu hỏi tiếp theo
-//        } else {
-            // Nếu đã đủ 3 ván, tính điểm chung cuộc
         if(joinedRoom.getResultClient1()!= null && joinedRoom.getResultClient2()!= null){
             String finalResult = "RESULT_GAME;success;" + scoreUser + ";" 
                              + joinedRoom.handleResultClient() + ";"

@@ -223,16 +223,16 @@ public class Room {
         int c4 = Integer.parseInt(a4) + Integer.parseInt(b4);
         
         if (c1 == Integer.parseInt(r1)) {
-            i++;
+            i+=10;
         } 
         if (c2 == Integer.parseInt(r2)) {
-            i++;
+            i+=10;
         } 
         if (c3 == Integer.parseInt(r3)) {
-            i++;
+            i+=10;
         } 
         if (c4 == Integer.parseInt(r4)) {
-            i++;
+            i+=10;
         } 
         
         System.out.println(user1 + " : " + i + " cau dung");
